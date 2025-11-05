@@ -92,7 +92,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden pb-6 border-t border-border/50 mt-4 pt-6 animate-in slide-in-from-top-5 duration-300">
+          <div className="md:hidden pb-6 border-t border-border/50 mt-4 pt-6 bg-background/95 backdrop-blur-md rounded-b-2xl shadow-lg animate-in slide-in-from-top-5 duration-300">
             <div className="flex flex-col space-y-4">
               {navLinks.map((link, index) => (
                 <button

@@ -143,20 +143,20 @@ export const FAQSection = () => {
         </div>
 
         <Tabs defaultValue="General & Capability" className="w-full" onValueChange={setActiveTab}>
-          <TabsList className="w-full flex flex-wrap justify-center gap-2 md:gap-4 mb-12 bg-transparent border-none p-0 h-auto">
+          <TabsList className="w-full flex md:flex-wrap justify-start md:justify-center gap-2 md:gap-4 mb-12 bg-transparent border-none p-0 h-auto overflow-x-auto md:overflow-visible pb-2 md:pb-0 scrollbar-hide">
             {categories.map((category) => (
               <TabsTrigger
                 key={category}
                 value={category}
                 className={`
                   px-4 py-2 md:px-6 md:py-3 text-sm md:text-base font-medium transition-all duration-300
-                  rounded-lg relative bg-transparent border-none shadow-none
+                  rounded-lg relative bg-transparent border-none shadow-none flex-shrink-0
                   data-[state=active]:bg-transparent data-[state=active]:text-primary
                   data-[state=inactive]:text-muted-foreground hover:text-foreground hover:bg-transparent
                   data-[state=active]:shadow-none
                 `}
               >
-                <span className="relative z-10">{category}</span>
+                <span className="relative z-10 whitespace-nowrap">{category}</span>
                 <span
                   className={`
                     absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-secondary rounded-full

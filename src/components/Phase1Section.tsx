@@ -82,7 +82,7 @@ export const Phase1Section = () => {
           </div>
           
           <p className="text-center text-primary font-medium">
-            <strong>Try it:</strong> "vintage astronaut hoodie" or "modern abstract phone case" — see how TOBE transforms your imagination into purchasable products with real-time design generation and partner fulfillment.
+            <strong>Try it:</strong> Ask for custom tshirts, modern abstract phone case, anything — see how TOBE transforms your imagination into purchasable products with real-time design generation.
           </p>
         </div>
       </div>

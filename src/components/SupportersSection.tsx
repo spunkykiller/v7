@@ -47,8 +47,8 @@ export const SupportersSection = () => {
                   alt={supporter.name}
                   className={`object-contain opacity-100 transition-opacity duration-300 ${
                     supporter.name === 'Microsoft' || supporter.name === 'Google Cloud' 
-                      ? 'w-[90%] h-[90%]' 
-                      : 'max-w-full max-h-full'
+                      ? 'w-[90%] h-[90%] md:w-[90%] md:h-[90%]' 
+                      : 'w-[85%] h-[85%] md:max-w-full md:max-h-full'
                   }`}
                 />
               </div>
